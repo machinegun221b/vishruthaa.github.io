@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/contact.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+	<section class="container contact" id="contact">
+		<div class="contact-container">
+			<div class="main-title">
+				<h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+			</div>
+			<div class="contact-content-con">
+				<div class="left-contact">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					</p>
+					
+					<div class="contact-icons">
+						<div class="contact-icon">
+							<a href="www.facebook.com" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="#" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="#" target="_blank">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="right-contact">
+					<form class="contact-form" action="https://formsubmit.io/send/8ec7e12b-2d3c-4ad0-aa69-317db590b747" method="POST">
+						<div class="input-control i-c-2">
+							<input type="text" id="name" required placeholder="Your Name">
+							<input type="email" id="email" required placeholder="Your E-mail">
+						</div>
+						<div class="input-control">
+							<input type="text" id="subject" required placeholder="Enter Subject">
+						</div>
+						<div class="input-control">
+							<textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
+						</div>
+						<div class="send-btn">
+							<button id="send">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	</main>
+
+	<script>
+		src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+		src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+	</script>	
+	<script src="contact.js"></script>
+	
+</body>
+</html>
