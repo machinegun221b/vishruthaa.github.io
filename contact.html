@@ -43,17 +43,20 @@
 					</div>
 				</div>
 				<div class="right-contact">
-					<form class="contact-form" action="https://formsubmit.io/send/8ec7e12b-2d3c-4ad0-aa69-317db590b747" method="POST">
+					<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="ed64608a-67e0-422b-bc0e-5e75b6380397">
+                				<input type="checkbox" name="botcheck" id="" style="display: none;" />
 						<div class="input-control i-c-2">
-							<input type="text" id="name" required placeholder="Your Name">
-							<input type="email" id="email" required placeholder="Your E-mail">
+							<input type="text" id="name" name="name" required placeholder="Your Name">
+							<input type="email" id="email" name="email" required placeholder="Your E-mail">
 						</div>
 						<div class="input-control">
-							<input type="text" id="subject" required placeholder="Enter Subject">
+							<input type="text" id="subject" name="subject" required placeholder="Enter Subject">
 						</div>
 						<div class="input-control">
 							<textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
 						</div>
+						<input type="hidden" name="redirect" value="https://web3forms.com/success">
 						<div class="send-btn">
 							<button id="send">Send</button>
 						</div>
@@ -63,12 +66,6 @@
 		</div>
 	</section>
 	</main>
-
-	<script>
-		src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
-		src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
-	</script>	
-	<script src="contact.js"></script>
 	
 </body>
 </html>
